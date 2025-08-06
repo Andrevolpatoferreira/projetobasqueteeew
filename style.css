@@ -1,0 +1,79 @@
+:root {
+  --cor-fundo: #01080E;
+  --cor-principal: #0B0D20;
+  --cor-secundaria: #212333;
+  --cor-destaque: #2BDEFD;
+  --cor-texto: #D7F9FF;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.titulo-jogo {
+  color: var(--cor-destaque);
+  font-size: 24px;
+}
+
+.texto-narrativa {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#pergunta-atual {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#opcoes-resposta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.botao-alternativa {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.botao-alternativa:hover {
+  background-color: var(--cor-destaque);
+  color: black;
+}
+
+.container-consequencia {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.botao-acao {
+  background-color: var(--cor-destaque);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
